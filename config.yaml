@@ -1,0 +1,24 @@
+models:
+  "Gemma-3-Abliterated-Q6_K_L":
+    proxy: "http://127.0.0.1:9980"
+    cmd: >
+      /nvme/llama.cpp/build/bin/llama-server
+      -m /nvme/models/llm/mlabonne_gemma-3-27b-it-abliterated-Q6_K_L.gguf
+      -ngl 99
+      -c 32768
+      -ctk q4_0
+      -ctv q4_0
+      -fa
+      --port 9980
+
+  "qwq-32b-q5_k_m":
+    proxy: "http://127.0.0.1:9980"
+    cmd: >
+      /nvme/llama.cpp/build/bin/llama-server
+      -m /nvme/models/llm/qwq-32b-q5_k_m.gguf
+      -ngl 99
+      -c 32768
+      -ctk q4_0
+      -ctv q4_0
+      -fa
+      --port 9980

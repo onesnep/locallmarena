@@ -1,0 +1,3 @@
+[submodule "llama-swap"]
+	path = llama-swap
+	url = https://github.com/mostlygeek/llama-swap.git
